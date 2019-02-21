@@ -5,35 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+    <link rel="stylesheet" href="./reset-css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <style>
+        * {
+            box-sizing: border-box;
+            color: #777777;
+            font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+        }
+
+        body {
+            background-image: url("./assets/images/dynamic-style.png");
+            size: 100%;
+        }
+
+        .card-title {
+            font-family: 'Georgia', Times, Times New Roman, serif;
+            color: #4aaaa5;
+        }
+
+        nav ul a {
+            color: black;
+        }
+
         nav .brand-logo {
             position: static;
             margin: 0px 0px 0px 0px;
             padding-left: 24px;
             padding-right: 24px;
-            /* background-color: teal lighten-2 */
         }
 
         .brand-logo {
             background-color: teal;
 
         }
-
-        /* card {
-            margin: 0px 0px 0px 0px;
-        }
-
-        body {
-            display: flex;
-            min-height: 100vh;
-            flex-direction: column;
-        }
-
-        main {
-            flex: 1 0 auto;
-        } */
     </style>
 
 </head>
@@ -44,15 +50,19 @@
 
     <div class="navbar-fixed">
 
-        <nav class="black">
+        <nav class="white">
             <div class="container">
-                <div class="nav-wrapper">
-                    <a href="#" class="brand-logo">Michael Anderson</a>
-                    <ul class="right hide-on-med-and-down" id="navList">
-                        <li><a href="./index.html">About</a></li>
-                        <li><a href="./portfolio.html">Portfolio</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
-                    </ul>
+                <div class="row">
+                    <div class="col s12 m12 offset-s4">
+                        <div class="nav-wrapper">
+                            <a href="#" class="brand-logo">Michael Anderson</a>
+                            <ul class="right hide-on-med-and-down" id="navList">
+                                <li><a href="./index.html">About</a></li>
+                                <li><a href="./portfolio.html">Portfolio</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -60,12 +70,24 @@
     </div>
 
     <div class="container">
-        <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-                <span class="card-title">About</span>
-                <div class="card-action">
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
+        <div class="row">
+            <div class="col xs12 s12 m12 offset-s3">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">About Me</span>
+                        <div class="card-action">
+                            <div class="row" style="margin-left: -33px;">
+                                <div class="col s3">
+                                    <img src="./assets/images/Photos-0625.jpg" alt="" class="responsive-img">
+                                    <!-- notice the "circle" class -->
+                                </div>
+                                <div class="col s8">
+                                    <p class="flow-text"> this is my page</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
