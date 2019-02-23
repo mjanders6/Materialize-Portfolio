@@ -1,0 +1,79 @@
+* {
+    /* box-sizing: border-box; */
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+body {
+    background-image: url("./assets/images/dynamic-style.png");
+    size: 100%;
+}
+
+.nav-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+nav ul a {
+    color: #777777;
+}
+
+nav .brand-logo {
+    position: static;
+    margin: 0px 0px 0px 0px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.brand-logo {
+    background-color: teal;
+}
+
+
+/* about me stuff */
+
+.container {
+    display: flex;
+    align-items: stretch;
+    margin: 0 auto;
+    /* max-width: 1280px; */
+    width: auto;
+    justify-content: center;
+}
+
+.card-title {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #4aaaa5;
+}
+
+.br-line {
+    border-bottom: 1px solid grey;
+}
+
+.main-col-width {
+    /* display: flex; */
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 85%;
+    /* height: 80%;
+    border-bottom: 1px solid black; */
+}
+
+@media only screen and (max-width: 400px) {
+    nav .brand-logo {
+        position: static;
+        margin: 0px 0px 0px 60px;
+        padding-left: 24px;
+        padding-right: 24px;
+        font-size: 10px;
+    }
+
+nav ul {
+    margin: -50px 0px 0px 105px;
+}
+}
