@@ -95,8 +95,38 @@ nav .brand-logo {
     margin-bottom: 15px;
 }
 
+@media only screen and (max-width: 993px) {
+    nav .brand-logo {
+        position: static;
+        margin: 0px 0px 0px 45px;
+        padding-left: 6px;
+        padding-right: 6px;
+        font-size: 10px;
+    }
+
+    nav ul {
+        margin: -50px 0px 0px 105px;
+    }
+
+    .br-line {
+        width: 90%;
+        border-bottom: 1px solid grey;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    nav ul li {
+        float: left;
+        margin: 50px 0px 0px 0px;
+    }
+
+}
+
 /* slight media to fix the movements of the links on the navbar */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 560px) {
     nav .brand-logo {
         position: static;
         margin: 0px 0px 0px 45px;
@@ -130,35 +160,10 @@ nav .brand-logo {
           flex-direction: column;
           justify-content: flex-start;
       }
+
+      nav ul li {
+          float: left;
+          margin: -6px 0px 0px -10px;
+      }
 }
 
-@media only screen and (max-width: 993px) {
-    nav .brand-logo {
-        position: static;
-        margin: 0px 0px 0px 45px;
-        padding-left: 6px;
-        padding-right: 6px;
-        font-size: 10px;
-    }
-
-    nav ul {
-        margin: -50px 0px 0px 105px;
-    }
-
-    .br-line {
-        width: 90%;
-        border-bottom: 1px solid grey;
-        justify-content: space-between;
-        margin: 0 auto;
-        margin-left: 20px;
-        margin-top: 10px;
-        margin-bottom: 15px;
-    }
-/* 
-    .responsive {
-        width: 20%;
-        height: 14%;
-        margin-right: 5px;
-      } */
-
-}
