@@ -9,7 +9,7 @@ body {
     font-size: 18px;
     line-height: 34px;
     color: #777777;
-    background-image: url("./assets/images/dynamic-style.png");
+    background-image: url(../images/dynamic-style.png);
     size: 100%;
 }
 
@@ -40,14 +40,11 @@ nav .brand-logo {
 /* About me content */
 .container {
     display: flex;
-    align-items: stretch;
-    flex-direction: column;
     margin: 0px auto;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 0px auto;
     width: 85%;
-    border: 1px solid grey;
 }
 
 .card {
@@ -67,15 +64,24 @@ nav .brand-logo {
 }
 
 .responsive {
-    width: 10%;
-    height: 7%;
+    width: 15%;
+    height: 9%;
+    margin-right: 5px;
   }
 
 .main-col-width {
     display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     margin-left: 20px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+}
+
+.card > p {
+    display: flex;
+    /* margin: 0 auto; */
+    margin-left: 20px;
+    margin-right: 5px;
     margin-bottom: 15px;
 }
 
@@ -90,12 +96,12 @@ nav .brand-logo {
 }
 
 /* slight media to fix the movements of the links on the navbar */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) {
     nav .brand-logo {
         position: static;
-        margin: 0px 0px 0px 60px;
-        padding-left: 24px;
-        padding-right: 24px;
+        margin: 0px 0px 0px 45px;
+        padding-left: 12px;
+        padding-right: 12px;
         font-size: 10px;
     }
 
@@ -112,4 +118,47 @@ nav .brand-logo {
         margin-top: 10px;
         margin-bottom: 15px;
     }
+
+    .responsive {
+        width: 30%;
+        height: 25%;
+        margin-right: 5px;
+      }
+
+      p, img {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+      }
+}
+
+@media only screen and (max-width: 993px) {
+    nav .brand-logo {
+        position: static;
+        margin: 0px 0px 0px 45px;
+        padding-left: 6px;
+        padding-right: 6px;
+        font-size: 10px;
+    }
+
+    nav ul {
+        margin: -50px 0px 0px 105px;
+    }
+
+    .br-line {
+        width: 90%;
+        border-bottom: 1px solid grey;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+/* 
+    .responsive {
+        width: 20%;
+        height: 14%;
+        margin-right: 5px;
+      } */
+
 }
