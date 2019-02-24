@@ -47,22 +47,6 @@ nav .brand-logo {
     width: 85%;
 }
 
-.card {
-    display: flex;
-    flex-direction: column;
-    margin: 0px auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 85%;
-}
-
-.about-me {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    flex-direction: row;
-}
-
 .responsive {
     width: 15%;
     height: 9%;
@@ -71,15 +55,15 @@ nav .brand-logo {
 
 .main-col-width {
     display: flex;
-    /* margin: 0 auto; */
-    margin-left: 20px;
-    margin-right: 5px;
-    margin-bottom: 15px;
+    flex-direction: column;
+    margin: 0px auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 85%;
 }
 
 .card > p {
     display: flex;
-    /* margin: 0 auto; */
     margin-left: 20px;
     margin-right: 5px;
     margin-bottom: 15px;
@@ -93,6 +77,32 @@ nav .brand-logo {
     margin-left: 20px;
     margin-top: 10px;
     margin-bottom: 15px;
+}
+
+/* Portfolio Images */
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    max-height: 100vh;
+  }
+
+.card-image img {
+    margin: 10px;
+    max-width: 18vw;
+    margin-left: 20px;
+  }
+
+.card .card-image .card-title {
+    background-color: teal;
+    position: absolute;
+    width: 18vw;
+    margin: 0px 0px 20px 20px;
+    padding: 0px 0px 0px 25px;
 }
 
 @media only screen and (max-width: 993px) {
