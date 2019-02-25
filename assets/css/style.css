@@ -46,37 +46,31 @@ nav .brand-logo {
 }
 
 /* About me content */
-.container {
-    display: flex;
-    margin: 0px auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 0px auto;
-    width: 85%;
-}
 
 .responsive {
     width: 15%;
     height: 9%;
     margin-right: 5px;
-    margin-left: 20px;
     margin-bottom: 10px;
   }
 
 .main-col-width {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
-    margin: 0px auto;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: flex-start;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: 95px;
     width: 85%;
 }
 
 .card p {
     display: inline-block;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: -10px;
+    margin-left: 20px;
+    margin-right: 5px;
+    margin-top: -5px;
     margin-bottom: 15px;
 }
 
@@ -88,15 +82,6 @@ nav .brand-logo {
     margin-left: 20px;
     margin-top: 10px;
     margin-bottom: 15px;
-}
-
-.div-body {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: flex-start;
-    align-items: flex-start;
-    }
 }
 
 .img-div {
